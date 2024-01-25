@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #EDEDED;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #202023;
+    position: relative;
+    z-index: 999;
+}
+
+.wrapper{
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+hr{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    border: #7843e9;
+    background-color: #7843e9;
+    z-index: 500;
+}
+
+nav{
+    display: flex;
+    justify-content: right;
+    padding: 15px 0 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    z-index: 100;
+    text-transform: uppercase;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-right: 20%;
+}
+
+nav ul li{
+    list-style-type: none;
+    cursor: pointer;
+    color: #EDEDED;
+    transition: 0.3s;
+}
+
+nav ul li:hover{
+    color: #7843e9;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.description-title{
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+
+.block-presentation{
+    background: url("images/img-cosmos.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin-bottom: 15vh;
+    position: relative;
+    height: 100vh;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.block-presentation_description{
+    width: 100%;
+    color: #EDEDED;
+    padding: 20px;
+    z-index: 2;
+    position: relative;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block-presentation_description_h2{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.description-presentation{
+    margin: 30px 0 80px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.5;
+    max-width: 70%;
+}
+
+#about-section{
+    padding: 45px 0;
+    border-bottom: 2px solid #7843e9;
+}
+
+.block-about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-inline-start: 20px;
+    margin-bottom: 15vh;
+}
+
+.block-about_dates{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.block-about_description{
+    display: flex;
+    gap: 2rem;
+}
+
+.years{
+    font-weight: 600;
+}
+
+#skills-title{
+    margin: 50px 0;
+}
+
+.block-skills{
+    font-size: 40px;
+   display: flex;
+   justify-content: space-around;
+}
+
+#like{
+    margin: 50px 0;
+}
+
+.block-like{
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.block-like_info{
+    display: flex;
+    align-items: center;
+}
+
+#block-like_info_text{
+    padding-inline-start: 10px;
+}
+
+#projects-section{
+    padding: 45px 0;
+    border-bottom: 2px solid #7843e9;
+}
+
+.block-projects{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15vh;
+    position: relative;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.block-projects_img{
+    overflow: hidden;
+    border-radius: 10px;
+    height: 100%;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.project-study{
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.img-project{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.block-projects_title_para{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 70%;
+}
+
+.block-projects_para{
+    margin: 20px 0 40px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.block-projects_title{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+main{
+    margin: 0 auto 10vh auto;
+    padding-inline: 20px;
+    max-width: 900px;  
+}
+
+.block-projects_para-project{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.block-overview{
+    margin: 15vh 0;
+}
+
+.block-overview_title{
+    margin-bottom: 2rem;
+}
+
+.tools{
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tool{
+    padding: 5px;
+    background-color: #666;
+    border-radius: 5px;
+}
+
+.see-project{
+    background-color: #7843e9;
+    padding: 10px;
+    /* margin: 20vh auto; */
+    border: 1px solid #7843e9;
+    border-radius: 5px;
+    display: block;
+    width: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline;
+    width: 20rem;
+    transition: 0.3s;
+
+}
+
+.see-project:hover{
+    border: 1px solid #7843e9;
+    background-color: transparent;
+    color: #7843e9;
+}
+
+.block-project-link_exit{
+    position: relative;
+    margin: 20vh auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-right-from-bracket{
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    cursor: pointer;
+}
+
+.block-overview_para{
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.title-project{
+    font-size: 1.5rem;
+}
+
+.block-projects_description{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.case-study{
+    background-color: #7843e9;
+    border: 1px solid #7843e9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.case-study:hover{
+    background-color: transparent;
+    color: #7843e9;
+    border: 1px solid #7843e9;
+}
+
+#pokedex-project, #kanap-project, #kasa-project, #booki-project{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#pokedex-project.show, #kanap-project.show, #kasa-project.show, #booki-project.show{
+    opacity: 1;
+    /* transform: scale(1.1) */
+}
+
+.description-project{
+    padding-inline: 5px;
+}
+
+.project-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #202023;
+    position: fixed;
+    z-index: 200;
+    display: none;
+    overflow:auto;
+    /* backdrop-filter: blur(10px); */
+    /* opacity: 0; */
+    transition: 0.5s;
+}
+
+.block-selected-project{
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: auto;
+}
+
+.fa-circle-xmark{
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    transform: translateX(-50%);
+    color: #666;
+}
+
+.contact-title{
+    margin-bottom: 50px;
+    padding: 45px 0;
+    border-bottom: 2px solid #7843e9;
+}
+
+.block-contact{
+    color: #EDEDED;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 10vh;
+    gap: 5rem;
+}
+
+
+#copyright{
+    width: fit-content;
+    margin: 30px auto;
+    display: block;
+    color: #EDEDED;
+    font-size: 14px;
+}
+
+
+/********************************* MEDIA QUERIES *********************************/
+
+@media screen and (max-width: 840px) {
+
+    .wrapper{
+        padding-inline: 5px;
+    }
+
+    main{
+        padding-inline: 5px;
+    }
+
+    .block-overview_para{
+        padding-inline: 20px;
+    }
+
+    .tools{
+        padding-inline: 20px;
+    }
+
+    nav ul{
+        width: 100%;
+        margin: 0;
+        padding-inline: 5px;
+    }
+
+    .block-projects_title{
+        font-size: 40px;
+    }
+
+    .block-projects_title_para{
+        max-width: 100%;
+        padding-inline: 5px;
+    }
+
+    .description-title{
+        font-size: 2rem;;
+    }
+
+    .description-presentation{
+        font-size: 18px;
+        max-width: inherit;
+    }
+
+    .block-about_description_para .years{
+        line-height: 1.5;
+    }
+
+    .block-about_description{
+        gap: 1rem;
+    }
+
+    .block-skills {
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: inherit;  
+        padding-inline: 20px; 
+        font-size: 30px;
+    }
+
+    .block-like_elements{
+        line-height: 1.5;
+    }
+
+    .block-projects_description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

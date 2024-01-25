@@ -1,0 +1,29 @@
+[
+    {
+        "id": "1",
+        "title": "Pokedex",
+        "description": "This is the pokedex app",
+        "picture": "./images/img-pokedex2.png"
+    },
+
+    {
+        "id": "2",
+        "title": "Kanap",
+        "description": "This is the Kanap app",
+        "picture": "./images/img-kanap2.png"
+    },
+
+    {
+        "id": "3",
+        "title": "Kasa",
+        "description": "This is the kasa app",
+        "picture": "./images/img-kasa2.png"
+    },
+
+    {
+        "id": "4",
+        "title": "Booki",
+        "description": "This is the Booki app",
+        "picture": "./images/img-booki2.png"
+    }
+]
