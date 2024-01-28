@@ -494,7 +494,7 @@ main{
 @media screen and (max-width: 840px) {
 
     .wrapper{
-        padding-inline: 5px;
+        padding-inline: 10px;
     }
 
     #burger{
@@ -580,6 +580,7 @@ main{
 
     .block-about_description{
         gap: 1rem;
+        line-height: 1.5;
     }
 
     .block-skills {
