@@ -7,10 +7,15 @@
     font-family: "Roboto", sans-serif;
 }
 
+html{
+    /* overflow-x: hidden; */
+}
+
 body{
     background-color: #202023;
     position: relative;
     z-index: 999;
+    /* overflow-x: hidden; */
 }
 
 .wrapper{
@@ -65,17 +70,78 @@ h1{
 .description-title{
     font-size: 3rem;
     letter-spacing: 0.2rem;
+    animation: hi 1.5s ease-in-out;
 }
+
+#nader{
+}
+
+@keyframes hi {
+
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#hi{
+    /* animation: hi 1s ease-in-out; */
+    /* animation-delay: 1s; */
+}
+
+
 
 .block-presentation{
     background: url("images/img-cosmos.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
     position: relative;
     height: 100vh;
 }
+
+.mouse{
+    position: relative;
+    width: 25px;
+    height: 40px;
+    border: 2px solid #EDEDED;
+    border-radius: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mouse::before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #EDEDED;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 1.3s infinite;
+    -webkit-animation: wheel 1.3s infinite;
+}
+
+@keyframes wheel {
+    to {
+        opacity: 0;
+        top: 27px
+    }
+}
+
+@-webkit-keyframes wheel {
+    to {
+        opacity: 0;
+        top: 27px
+    }
+}
+
 
 .overlay{
     width: 100%;
@@ -95,6 +161,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .block-presentation_description_h2{
@@ -108,6 +175,34 @@ h1{
     font-size: 22px;
     line-height: 1.5;
     max-width: 70%;
+    animation: hi 1.5s ease-in-out  ;
+}
+
+@keyframes script {
+
+    from{
+        color: #7843e9;
+        opacity: 0;
+        margin-bottom: -200px;
+    }
+    10%{
+        color: #EDEDED;
+    }
+    25%{
+        color: #7843e9;
+    }
+    50%{
+        opacity: 0.5;
+        /* margin-bottom: -100px; */
+        color: #EDEDED;
+    }
+    55%{
+        color:#7843e9;
+    }
+    to {
+        opacity: 1;
+        /* margin-bottom: 0; */
+    }
 }
 
 #about-section{
@@ -120,7 +215,7 @@ h1{
     flex-direction: column;
     margin-top: 50px;
     padding-inline-start: 20px;
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
 }
 
 .block-about_dates{
@@ -162,6 +257,7 @@ h1{
 .block-like_info{
     display: flex;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 #block-like_info_text{
@@ -176,7 +272,7 @@ h1{
 .block-projects{
     display: flex;
     flex-direction: column;
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
     position: relative;
     gap: 100px;
     margin-top: 50px;
@@ -233,7 +329,7 @@ main{
 }
 
 .block-overview{
-    margin: 15vh 0;
+    margin: 10vh 0;
 }
 
 .block-overview_title{
@@ -355,18 +451,16 @@ main{
     margin: 0 auto;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     position: relative;
     cursor: auto;
+    flex-direction: column;
 }
 
 .fa-circle-xmark{
-    position: absolute;
-    top: 2rem;
-    left: 50%;
+    /* position: absolute; */
     font-size: 30px;
     cursor: pointer;
-    transform: translateX(-50%);
     color: #666;
 }
 
@@ -403,6 +497,23 @@ main{
         padding-inline: 5px;
     }
 
+    #burger{
+    font-weight: 900;
+    position: absolute;
+    z-index: 200;
+    right: 1rem;
+    top: 1rem;
+    font-size: 30px;
+    }
+
+    .block-selected-project{
+        height: 50vh;
+    }
+
+    .mouse{
+        display: none;
+    }
+
     main{
         padding-inline: 5px;
     }
@@ -414,15 +525,39 @@ main{
     .tools{
         padding-inline: 20px;
     }
+    
+    hr{
+        display: none;
+    }
+
+    .handle-nav {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.5s, visibility 0.5s;
+      }
+      
+    nav {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0.5s;
+    position: absolute;
+    }
+
+    .hamburger{
+    display: inline-block !important
+    }
 
     nav ul{
-        width: 100%;
         margin: 0;
         padding-inline: 5px;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+        width: inherit; 
     }
 
     .block-projects_title{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .block-projects_title_para{

@@ -159,6 +159,7 @@ let pokedex = new ScrollMagic.Scene({
       blockProject.style.display = "block"
       const body = document.body;
       body.style.overflow = "hidden"  
+      // body.style.position = "fixed"  
     })
   }
 
@@ -175,3 +176,15 @@ let pokedex = new ScrollMagic.Scene({
   const closeButton = document.getElementById("close-project");
   closeButton.addEventListener("click", closeProject);
   document.getElementById("close-project").addEventListener("click", closeProject);
+
+  function displayNav(){
+    const burgerButton = document.querySelector(".hamburger");
+    burgerButton.addEventListener("click", ()=>{
+      const nav = document.getElementById("navigation");
+      nav.classList.toggle("handle-nav")
+      burgerButton.classList.toggle("is-active")
+      
+    })
+  }
+
+  displayNav()

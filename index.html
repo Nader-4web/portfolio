@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link href="hamburgers.css" rel="stylesheet">
     <title>Nader Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b97639225c.js" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+
 </head>
 <body> 
     <div class="project-wrapper">
@@ -15,8 +17,9 @@
             <i class="fa-regular fa-circle-xmark" id="close-project"></i>
             <div class="block-projects_title_para">
                 <h3 class="block-projects_title"></h3>
-                <p class="block-projects_para-project"></p>              
+                <p class="block-projects_para-project"></p>
             </div>
+            <div class="mouse"></div>              
         </div>  
         <main>
              <div class="block-projects_img project-study">
@@ -31,43 +34,43 @@
             <div class="block-tools">
                 <h2>Tools used</h2>
                 <div class="tools">
-                    <!-- <div class="tool">HTML</div>
-                    <div class="tool">CSS</div>
-                    <div class="tool">JAVASCRIPT</div>
-                    <div class="tool">GIT</div>
-                    <div class="tool">GITHUB</div> -->
+                  
                 </div>
             </div>
             <div class="block-project-link_exit">
                 <a href="" target="_blank" class="project-link">
                     <button class="see-project">SEE PROJECT</button>
                 </a>
-                <!-- <i class="fa-solid fa-right-from-bracket" id="close-icon"></i> -->
             </div>
         </main>
        
     </div>
 
     <hr>
-        <nav>
+        <nav id="navigation">
             <ul>
                 <li id="about">About</li>
                 <li id="projects">Projects</li>
                 <li id="contact">Contact</li>
             </ul>
-        </nav>
-        
+        </nav>  
 
         <div class="block-presentation">
+              <button class="hamburger hamburger--3dxy" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
             <div class="overlay"></div>
             <div class="block-presentation_description">
-                <h1 class="description-title">Hi, i'm Nader</h1>
-                <p class="description-presentation">I am a front end developer, I mainly take care of the front end development of sites or web applications, and take on challenges every day to provide an exceptional user experience</p>
-                <div class="block-like_info">
+                <h1 class="description-title"><span id="hi">Hi,</span> <span id="nader"> i'm Nader</span></h1>
+                <p class="description-presentation">A front end developer, I mainly take care of the front end development of sites or web applications, and take on challenges every day to provide an exceptional user experience</p>
+                <!-- <div class="block-like_info">
                     <i class="fa-solid fa-circle-info"></i>
                     <p id="block-like_info_text">Currently learning Chakra UI</p>
-                </div>
+                </div> -->
               
+                <div class="mouse"></div>
             </div>
         </div>
         <div class="wrapper">
