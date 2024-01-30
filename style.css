@@ -7,15 +7,11 @@
     font-family: "Roboto", sans-serif;
 }
 
-html{
-    /* overflow-x: hidden; */
-}
 
 body{
     background-color: #202023;
     position: relative;
     z-index: 999;
-    /* overflow-x: hidden; */
 }
 
 .wrapper{
@@ -236,6 +232,18 @@ h1{
 
 #skills-title{
     margin: 50px 0;
+}
+
+.block-skills_skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.block-skills_skill-name{
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .block-skills{
@@ -525,7 +533,7 @@ main{
     }
 
     main{
-        padding-inline: 5px;
+        padding-inline: 10px;
     }
 
     .block-overview_para{
