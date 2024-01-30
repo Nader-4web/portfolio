@@ -95,6 +95,7 @@ h1{
 
 .block-presentation{
     background: url("images/img-cosmos.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -241,6 +242,10 @@ h1{
     font-size: 40px;
    display: flex;
    justify-content: space-around;
+}
+
+#heart{
+    margin-left: 5px;
 }
 
 #like{
@@ -462,6 +467,11 @@ main{
     font-size: 30px;
     cursor: pointer;
     color: #666;
+    transition: 0.3s;
+}
+
+.fa-circle-xmark:hover{
+    color: #EDEDED;
 }
 
 .contact-title{

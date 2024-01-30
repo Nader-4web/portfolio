@@ -87,10 +87,9 @@ let pokedex = new ScrollMagic.Scene({
       blockProject.style.display = "block";
       const body = document.body;
       body.style.overflow = "hidden";
-      // document.querySelector(".project-wrapper").style.opacity = 1
+
     })
-
-
+    
   }
 
   displayPokedex()
