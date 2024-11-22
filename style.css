@@ -70,8 +70,6 @@ h1{
     animation: hi 1.5s ease-in-out;
 }
 
-#nader{
-}
 
 @keyframes hi {
 
@@ -82,14 +80,6 @@ h1{
         opacity: 1;
     }
 }
-
-#hi{
-    /* animation: hi 1s ease-in-out; */
-    /* animation-delay: 1s; */
-}
-
-
-
 .block-presentation{
     background: url("images/img-cosmos.jpg");
     background-attachment: fixed;
