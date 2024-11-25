@@ -545,9 +545,9 @@ main{
         padding-inline: 20px;
     }
     
-    /* hr{
+    hr{
         display: none;
-    } */
+    }
 
     .handle-nav {
         visibility: visible;
