@@ -263,6 +263,7 @@ p {
 .block-like{
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .block-like_elements{
