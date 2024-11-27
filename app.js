@@ -188,3 +188,22 @@ let pokedex = new ScrollMagic.Scene({
   }
 
   displayNav()
+
+
+const backToTopButton = document.getElementById("top-of-page");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 250) {
+
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+});
+
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
